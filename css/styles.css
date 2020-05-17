@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,17 +53,100 @@ table {
   border-spacing: 0;
 }
 
-.background-hero {
-  background-image: url(../images/header-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+body   {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav .nav-un {
+  background-color: #e00606;
   width: 100%;
-  height: 100%;
-  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.nav .nav-un .nav-width {
+  max-width: 1200px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav .nav-un .nav-width a {
+  flex-grow: 1;
+  flex-basis: 1;
+}
+.nav .nav-un .nav-width a.grow-2 {
+  flex-grow: 2;
+}
+.nav .nav-deux {
+  background-color: #000000;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.nav .nav-deux .nav-width {
+  max-width: 1200px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+.nav .nav-deux .nav-width .nav-alignement {
+  margin-left: auto;
+}
+.nav .nav-deux .nav-width .nav-alignement a {
+  padding: 15px;
+}
+.nav .nav-deux img {
+  width: 50%;
+}
+
+.background-hero {
+  height: 95vh;
+  background-image: linear-gradient(#7271713d, #7fadaa3d), url(../images/header-img.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(50% 0%, 100% 0, 100% 50%, 71% 65%, 0% 45%, 0 0);
 }
 .background-hero .texte {
-  padding: 215px;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.background-hero .texte h2 {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.background-hero .texte h3 {
+  font-size: 120px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.background-hero .texte p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 5.4px;
+}
+.background-hero .icon {
+  margin-right: 11px;
+  text-align: right;
+}
+.background-hero .icon a {
+  color: white;
 }
 
 .section-galerie {
