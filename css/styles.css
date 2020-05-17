@@ -94,7 +94,7 @@ body   {
   flex-grow: 2;
 }
 .nav .nav-deux {
-  background-color: #000000;
+  background-color: #353535;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -119,10 +119,16 @@ body   {
 
 .background-hero {
   height: 95vh;
-  background-image: linear-gradient(#7271713d, #7fadaa3d), url(../images/header-img.jpg);
+  background-image: linear-gradient(#7271713d, #5253533d), url(../images/header-img.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: polygon(50% 0%, 100% 0, 100% 50%, 71% 65%, 0% 45%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 55%, 71% 73%, 0% 55%, 0 0);
+}
+.background-hero .border {
+  height: 95vh;
+  clip-path: polygon(71% 71%, 100% 53%, 100% 55%, 71% 73%, 0% 55%, 0 53%);
+  background-color: white;
+  opacity: 0.2;
 }
 .background-hero .texte {
   color: white;
@@ -157,7 +163,7 @@ body   {
 }
 
 .section-infos {
-  margin-top: -18%;
+  margin-top: -10%;
   display: flex;
   flex-direction: row;
   font-family: Montserrat;
@@ -168,9 +174,10 @@ body   {
   align-items: center;
 }
 .section-infos .description h2 {
-  font-size: 3rem;
+  font-size: 39px;
   line-height: 1.3;
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .section-infos .description p {
   line-height: 1.3;
@@ -180,8 +187,10 @@ body   {
   color: white;
   font-family: "Montserrat";
   background-color: #e00606;
-  padding: 10px;
+  padding: 20px 36px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */
