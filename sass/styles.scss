@@ -282,22 +282,28 @@ body  {
             line-height: 1.3;
             margin-bottom: 50px;
         }
-    
-        a {
-            color: white;
-            font-family: "Montserrat";
-            background-color: #e00606;
-            padding: 20px 36px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
 
-            &:hover {
-                font-size: 18px;
-                background-color: #990606;
-                transition: 0.5s;
+        .container-button {
+
+            height: 18px;
+
+            a {
+                color: white;
+                font-family: "Montserrat";
+                background-color: #e00606;
+                padding: 20px 36px;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+    
+                &:hover {
+                    font-size: 18px;
+                    background-color: #990606;
+                    transition: 0.3s;
+                }
             }
         }
+    
     }
 
 
