@@ -46,6 +46,8 @@ body  {
             display: flex;
             margin-right: auto;
             margin-left: auto;
+            padding-left: 10px;
+            padding-right: 10px;
 
             a {
                 flex-grow: 1;
@@ -83,6 +85,8 @@ body  {
             margin-right: auto;
             margin-left: auto;
             align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
 
             .nav-alignement {
                 margin-left: auto;
@@ -153,7 +157,7 @@ body  {
 
 
 .background-hero {
-
+    position: relative;
     height: 60vh;
     background-image: linear-gradient(
         #7271713d,
@@ -178,7 +182,7 @@ body  {
         color: white;
         text-transform: uppercase;
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: 'Montserrat';
