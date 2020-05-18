@@ -116,6 +116,16 @@ body   {
 .nav .nav-deux img {
   width: 50%;
 }
+.nav .nav-mobile a {
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 2;
+}
+@media (min-width: 576px) {
+  .nav .nav-mobile {
+    display: none;
+  }
+}
 
 .background-hero {
   height: 95vh;
@@ -140,39 +150,73 @@ body   {
   font-family: "Montserrat";
 }
 .background-hero .texte h2 {
-  font-size: 90px;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-.background-hero .texte h3 {
-  font-size: 178px;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-.background-hero .texte p {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 5.4px;
+}
+@media (min-width: 576px) {
+  .background-hero .texte h2 {
+    font-size: 90px;
+  }
+}
+.background-hero .texte h3 {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 5.4px;
+}
+@media (min-width: 576px) {
+  .background-hero .texte h3 {
+    font-size: 178px;
+  }
+}
+.background-hero .texte p {
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 5.4px;
+}
+@media (min-width: 576px) {
+  .background-hero .texte p {
+    font-size: 35px;
+  }
 }
 .background-hero .icon {
   margin-right: 18px;
   text-align: right;
-  font-size: 30px;
+  font-size: 16px;
+}
+@media (min-width: 576px) {
+  .background-hero .icon {
+    font-size: 30px;
+  }
 }
 .background-hero .icon a {
   color: white;
 }
 
 .section-infos {
-  margin-top: -10%;
-  display: flex;
-  flex-direction: row;
-  font-family: Montserrat;
-  max-width: 1200px;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .section-infos {
+    margin-top: -10%;
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+    max-width: 1200px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+.section-infos img {
+  width: 75%;
+}
+@media (min-width: 576px) {
+  .section-infos img {
+    width: 572px;
+  }
 }
 .section-infos .description h2 {
   font-size: 39px;

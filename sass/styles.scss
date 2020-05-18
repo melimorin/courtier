@@ -27,8 +27,8 @@ body  {
     a {
         color: white;
         text-decoration: none;
-
         font-family: 'Montserrat';
+        
 
     }
 
@@ -84,8 +84,23 @@ body  {
         }
     
     }
-}
 
+    .nav-mobile {
+
+        a {
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 2;
+        }
+
+        @media (min-width: 576px) {
+            display: none;
+        }
+        
+        
+    }
+}
+    
 
 .background-hero {
 
@@ -115,27 +130,43 @@ body  {
         font-family: 'Montserrat';
 
         h2 {
-            font-size: 90px;
+            font-size: 30px;
             font-weight: 400;
-            letter-spacing: 5px;
+            letter-spacing: 5.4px;
+
+            @media (min-width: 576px){
+                font-size: 90px;
+            }
         }
         h3 {
-            font-size: 178px;
+            font-size: 60px;
             font-weight: 400;
-            letter-spacing: 5px;
+            letter-spacing: 5.4px;
+
+            @media (min-width: 576px){
+                font-size: 178px;
+            }
         }
 
         p {
-            font-size: 35px;
+            font-size: 8px;
             font-weight: 400;
             letter-spacing: 5.4px;
+
+            @media (min-width: 576px){
+                font-size: 35px;
+            }
         }
     }
 
     .icon {
         margin-right: 18px;
         text-align: right;
-        font-size: 30px;
+        font-size: 16px;
+
+        @media (min-width: 576px){
+            font-size: 30px;
+        }
 
         a {
             color: white;
@@ -145,16 +176,32 @@ body  {
 }
 
 .section-infos {
-    margin-top: -10%;
-    display: flex;
-    flex-direction: row;
-    font-family: Montserrat;
+    flex-direction: column;
+    text-align: center;
 
-    max-width: 1200px;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
+    @media (min-width: 576px){
+        margin-top: -10%;
+        display: flex;
+        flex-direction: row;
+        font-family: Montserrat;
+    
+        max-width: 1200px;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    img {
+        width: 75%;
+
+        @media (min-width: 576px){
+            width: 572px;
+        }
+
+
+    }
+    
 
     .description {
 
