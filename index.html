@@ -6,6 +6,7 @@
     <meta name="description" content="Site Web de Mélissa Morin, Intégratrice Web.">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/fdfacbe317.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
     <title>Courtier</title>
 </head>
 <body>
@@ -48,8 +49,11 @@
             </div>
 
             <div class="nav-mobile">
-                <div class="nav-un mobile-1">
-                    <a href="#"><i class="fas fa-bars"></i></a>
+                <div class="logo-container">
+                    <a class="logo" href="#"><img  src="images/logo.png" alt=""></a>
+                    <a class="burger" onclick="toggle()" href="#"><i class="fas fa-bars"></i></a>
+                </div>
+                <div id="nav-menu" class="nav-un mobile-1">
                     <a href="#">Language</a>
                     <a href="#"><i class="fas fa-phone"></i>  888 290-8888</a>
                     <a href="#"><i class="fas fa-mobile"></i>  888 290-0000</a>
