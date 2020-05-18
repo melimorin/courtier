@@ -127,12 +127,26 @@ body   {
   }
 }
 
+.nav-desktop {
+  display: none;
+}
+@media (min-width: 576px) {
+  .nav-desktop {
+    display: block;
+  }
+}
+
 .background-hero {
-  height: 95vh;
+  height: 60vh;
   background-image: linear-gradient(#7271713d, #5253533d), url(../images/header-img.jpg);
   background-size: cover;
   background-position: center;
   clip-path: polygon(50% 0%, 100% 0, 100% 55%, 71% 73%, 0% 55%, 0 0);
+}
+@media (min-width: 576px) {
+  .background-hero {
+    height: 95vh;
+  }
 }
 .background-hero .border {
   height: 95vh;
@@ -182,7 +196,7 @@ body   {
 .background-hero .icon {
   margin-right: 18px;
   text-align: right;
-  font-size: 16px;
+  font-size: 26px;
 }
 @media (min-width: 576px) {
   .background-hero .icon {
@@ -196,6 +210,8 @@ body   {
 .section-infos {
   flex-direction: column;
   text-align: center;
+  margin-top: -70px;
+  padding: 20px;
 }
 @media (min-width: 576px) {
   .section-infos {
