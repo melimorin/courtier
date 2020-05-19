@@ -111,13 +111,27 @@ body  {
             display: flex;
             align-items: center;
 
+            .logo {
+                @media (min-width:768px) {
+                    flex-grow: 1;
+                }
+            }
+
             img {
-                width: 50%;
+                width: 35%;
                 padding: 15px;
+
+                @media (min-width:769px) {
+                    width: 50%;
+                }
             }
 
             .burger {
                 font-size: 30px;
+
+                @media (min-width:768px) {
+                    flex-grow: 0;
+                }
             }
         }
         .mobile-1 {
@@ -140,7 +154,7 @@ body  {
             line-height: 2;
         }
 
-        @media (min-width: 576px) {
+        @media (min-width: 960px) {
             display: none;
         }
         
@@ -150,7 +164,7 @@ body  {
 .nav-desktop {
     display: none;
 
-    @media (min-width: 576px) {
+    @media (min-width: 960px) {
         display: block;
     }
 }
@@ -167,7 +181,7 @@ body  {
     background-position: center;
     clip-path: polygon(50% 0%, 100% 0, 100% 55%, 71% 73%, 0% 55%, 0 0);
 
-    @media (min-width: 576px){
+    @media (min-width: 960px){
         height: 95vh;
     }
 
@@ -192,7 +206,7 @@ body  {
             font-weight: 400;
             letter-spacing: 5.4px;
 
-            @media (min-width: 576px){
+            @media (min-width: 960px){
                 font-size: 90px;
             }
         }
@@ -201,7 +215,7 @@ body  {
             font-weight: 400;
             letter-spacing: 5.4px;
 
-            @media (min-width: 576px){
+            @media (min-width: 960px){
                 font-size: 178px;
             }
         }
@@ -211,7 +225,7 @@ body  {
             font-weight: 400;
             letter-spacing: 2.8px;
 
-            @media (min-width: 576px){
+            @media (min-width: 960px){
                 font-size: 35px;
                 letter-spacing: 5.2px;
             }
@@ -228,7 +242,7 @@ body  {
             transition: 0.2s;
         }
 
-        @media (min-width: 576px){
+        @media (min-width: 960px){
             font-size: 30px;
         }
 
@@ -246,7 +260,7 @@ body  {
     margin-bottom: 15px;
     padding: 20px;
 
-    @media (min-width: 576px){
+    @media (min-width: 960px){
         margin-top: -10%;
         display: flex;
         flex-direction: row;
@@ -263,7 +277,7 @@ body  {
     img {
         width: 75%;
 
-        @media (min-width: 576px){
+        @media (min-width: 960px){
             width: 572px;
         }
 

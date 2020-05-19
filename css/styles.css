@@ -138,12 +138,27 @@ body   {
   display: flex;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .nav .nav-mobile .logo-container .logo {
+    flex-grow: 1;
+  }
+}
 .nav .nav-mobile .logo-container img {
-  width: 50%;
+  width: 35%;
   padding: 15px;
+}
+@media (min-width: 769px) {
+  .nav .nav-mobile .logo-container img {
+    width: 50%;
+  }
 }
 .nav .nav-mobile .logo-container .burger {
   font-size: 30px;
+}
+@media (min-width: 768px) {
+  .nav .nav-mobile .logo-container .burger {
+    flex-grow: 0;
+  }
 }
 .nav .nav-mobile .mobile-1 {
   display: flex;
@@ -163,7 +178,7 @@ body   {
   margin-right: 10px;
   line-height: 2;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .nav .nav-mobile {
     display: none;
   }
@@ -172,7 +187,7 @@ body   {
 .nav-desktop {
   display: none;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .nav-desktop {
     display: block;
   }
@@ -186,7 +201,7 @@ body   {
   background-position: center;
   clip-path: polygon(50% 0%, 100% 0, 100% 55%, 71% 73%, 0% 55%, 0 0);
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .background-hero {
     height: 95vh;
   }
@@ -211,7 +226,7 @@ body   {
   font-weight: 400;
   letter-spacing: 5.4px;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .background-hero .texte h2 {
     font-size: 90px;
   }
@@ -221,7 +236,7 @@ body   {
   font-weight: 400;
   letter-spacing: 5.4px;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .background-hero .texte h3 {
     font-size: 178px;
   }
@@ -231,7 +246,7 @@ body   {
   font-weight: 400;
   letter-spacing: 2.8px;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .background-hero .texte p {
     font-size: 35px;
     letter-spacing: 5.2px;
@@ -246,7 +261,7 @@ body   {
   color: #353535;
   transition: 0.2s;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .background-hero .icon {
     font-size: 30px;
   }
@@ -262,7 +277,7 @@ body   {
   margin-bottom: 15px;
   padding: 20px;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .section-infos {
     margin-top: -10%;
     display: flex;
@@ -278,7 +293,7 @@ body   {
 .section-infos img {
   width: 75%;
 }
-@media (min-width: 576px) {
+@media (min-width: 960px) {
   .section-infos img {
     width: 572px;
   }
