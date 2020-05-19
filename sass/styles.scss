@@ -21,7 +21,7 @@ body  {
 .align-right {
     text-align: left;
 
-    @media (min-width: 576px) {
+    @media (min-width: 960px) {
         text-align: right;
     }
 }
@@ -112,7 +112,7 @@ body  {
             align-items: center;
 
             .logo {
-                @media (min-width:768px) {
+                @media (min-width:576px) {
                     flex-grow: 1;
                 }
             }
@@ -129,7 +129,7 @@ body  {
             .burger {
                 font-size: 30px;
 
-                @media (min-width:768px) {
+                @media (min-width:576px) {
                     flex-grow: 0;
                 }
             }
@@ -259,6 +259,7 @@ body  {
     margin-top: -70px;
     margin-bottom: 15px;
     padding: 20px;
+    font-family: Montserrat;
 
     @media (min-width: 960px){
         margin-top: -10%;
